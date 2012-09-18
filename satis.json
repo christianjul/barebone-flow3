@@ -1,0 +1,29 @@
+{
+    "name": "christianjul/barebone-flow3",
+    "description" : "Barebone FLOW3 project",
+    "authors": [
+        {
+            "name": "Christian Jul Jensen",
+            "email": "julle@typo3.org"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/christianjul/FLOW3-Composer.git"
+        },
+        {
+            "type": "git",
+            "url": "git://github.com/christianjul/Fluid-composer.git"
+        },
+        {
+            "type": "git",
+            "url": "git://github.com/christianjul/TYPO3.Party-composer.git"
+        },
+        {
+            "type": "git",
+            "url": "git://github.com/christianjul/installers.git"
+        }
+    ],
+    "require-all" : true
+}
