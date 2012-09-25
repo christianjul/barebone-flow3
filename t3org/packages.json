@@ -8,7 +8,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://github.com/christianjul/installers.git",
-                    "reference": "e054f57bb01d598428c3851491833bfff4582f95"
+                    "reference": "4edd34b54b6aefcd82833c238fabca800c5b7684"
                 },
                 "replace": {
                     "shama/baton": "*"
@@ -16,10 +16,13 @@
                 "require-dev": {
                     "composer/composer": "1.0.*"
                 },
-                "time": "2012-09-25 05:32:08",
+                "time": "2012-09-25 08:51:42",
                 "type": "composer-installer",
                 "extra": {
-                    "class": "Composer\\Installers\\Installer"
+                    "class": "Composer\\Installers\\Installer",
+                    "branch-alias": {
+                        "dev-installer-test": "1.0.0-dev"
+                    }
                 },
                 "autoload": {
                     "psr-0": {
@@ -64,7 +67,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://github.com/christianjul/installers.git",
-                    "reference": "cfe501416dcd2fdc82b9d56d24f100b41479fdb4"
+                    "reference": "84db9e22724c108bcf705e3448885ef68b3c36c6"
                 },
                 "replace": {
                     "shama/baton": "*"
@@ -72,10 +75,13 @@
                 "require-dev": {
                     "composer/composer": "1.0.*"
                 },
-                "time": "2012-09-25 05:24:07",
+                "time": "2012-09-25 08:54:51",
                 "type": "composer-installer",
                 "extra": {
-                    "class": "Composer\\Installers\\Installer"
+                    "class": "Composer\\Installers\\Installer",
+                    "branch-alias": {
+                        "dev-installer-test": "1.0.0-dev"
+                    }
                 },
                 "autoload": {
                     "psr-0": {
@@ -123,7 +129,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                    "reference": "37492ff27740939f24a6a272c12a30c5aefd042e"
+                    "reference": "eb9b140d38df21d58fc2e2e1c22d139f9065f91a"
                 },
                 "require": {
                     "php": ">=5.3.2",
@@ -139,7 +145,7 @@
                     "symfony/yaml": ">2.1.0",
                     "symfony/dom-crawler": ">2.0.16"
                 },
-                "time": "2012-09-25 06:25:34",
+                "time": "2012-09-25 07:17:23",
                 "type": "flow3-framework",
                 "autoload": {
                     "psr-0": {
