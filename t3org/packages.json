@@ -1,14 +1,14 @@
 {
     "packages": {
-        "christianjul/installers": {
+        "composer/installers": {
             "dev-master": {
-                "name": "christianjul/installers",
+                "name": "composer/installers",
                 "version": "dev-master",
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
                     "url": "git://github.com/christianjul/installers.git",
-                    "reference": "1ddb8e8770b037dca2f4eaeb2a242767722acced"
+                    "reference": "e054f57bb01d598428c3851491833bfff4582f95"
                 },
                 "replace": {
                     "shama/baton": "*"
@@ -16,7 +16,7 @@
                 "require-dev": {
                     "composer/composer": "1.0.*"
                 },
-                "time": "2012-09-10 06:48:59",
+                "time": "2012-09-25 05:32:08",
                 "type": "composer-installer",
                 "extra": {
                     "class": "Composer\\Installers\\Installer"
@@ -56,6 +56,63 @@
                     "zend",
                     "silverstripe"
                 ]
+            },
+            "dev-installer-test": {
+                "name": "composer/installers",
+                "version": "dev-installer-test",
+                "version_normalized": "dev-installer-test",
+                "source": {
+                    "type": "git",
+                    "url": "git://github.com/christianjul/installers.git",
+                    "reference": "cfe501416dcd2fdc82b9d56d24f100b41479fdb4"
+                },
+                "replace": {
+                    "shama/baton": "*"
+                },
+                "require-dev": {
+                    "composer/composer": "1.0.*"
+                },
+                "time": "2012-09-25 05:24:07",
+                "type": "composer-installer",
+                "extra": {
+                    "class": "Composer\\Installers\\Installer"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Composer\\Installers\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Kyle Robinson Young",
+                        "email": "kyle@dontkry.com",
+                        "homepage": "https://github.com/shama"
+                    }
+                ],
+                "description": "A multi-framework Composer library installer",
+                "homepage": "http://composer.github.com/installers/",
+                "keywords": [
+                    "installer",
+                    "cakephp",
+                    "laravel",
+                    "kohana",
+                    "li3",
+                    "lithium",
+                    "fuelphp",
+                    "codeigniter",
+                    "symfony",
+                    "phpbb",
+                    "ppi",
+                    "joomla",
+                    "wordpress",
+                    "drupal",
+                    "zend",
+                    "silverstripe",
+                    "FLOW3"
+                ]
             }
         },
         "typo3/flow3": {
@@ -66,7 +123,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                    "reference": "613025176356c63973da4db8635cb99eb0f00338"
+                    "reference": "e3f9f13dcb1fde487741447f034c0a4c0150f526"
                 },
                 "require": {
                     "php": ">=5.3.2",
@@ -74,7 +131,7 @@
                     "ext-spl": "*",
                     "ext-json": ">=1.2.0",
                     "ext-session": "*",
-                    "christianjul/installers": "*",
+                    "composer/installers": ">1.0.0",
                     "typo3/fluid": "*",
                     "typo3/party": "*",
                     "doctrine/orm": "2.2.2",
@@ -82,10 +139,7 @@
                     "symfony/yaml": ">2.1.0",
                     "symfony/dom-crawler": ">2.0.16"
                 },
-                "require-dev": {
-                    "mikey179/vfsstream": "*"
-                },
-                "time": "2012-09-20 19:37:20",
+                "time": "2012-09-25 05:49:07",
                 "type": "flow3-framework",
                 "autoload": {
                     "psr-0": {
