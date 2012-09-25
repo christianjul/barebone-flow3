@@ -123,7 +123,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                    "reference": "e3f9f13dcb1fde487741447f034c0a4c0150f526"
+                    "reference": "37492ff27740939f24a6a272c12a30c5aefd042e"
                 },
                 "require": {
                     "php": ">=5.3.2",
@@ -131,7 +131,7 @@
                     "ext-spl": "*",
                     "ext-json": ">=1.2.0",
                     "ext-session": "*",
-                    "composer/installers": ">1.0.0",
+                    "composer/installers": "1.0.0",
                     "typo3/fluid": "*",
                     "typo3/party": "*",
                     "doctrine/orm": "2.2.2",
@@ -139,7 +139,7 @@
                     "symfony/yaml": ">2.1.0",
                     "symfony/dom-crawler": ">2.0.16"
                 },
-                "time": "2012-09-25 05:49:07",
+                "time": "2012-09-25 06:25:34",
                 "type": "flow3-framework",
                 "autoload": {
                     "psr-0": {
