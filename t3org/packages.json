@@ -8,7 +8,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://github.com/christianjul/installers.git",
-                    "reference": "4edd34b54b6aefcd82833c238fabca800c5b7684"
+                    "reference": "e054f57bb01d598428c3851491833bfff4582f95"
                 },
                 "replace": {
                     "shama/baton": "*"
@@ -16,13 +16,10 @@
                 "require-dev": {
                     "composer/composer": "1.0.*"
                 },
-                "time": "2012-09-25 08:51:42",
+                "time": "2012-09-25 05:32:08",
                 "type": "composer-installer",
                 "extra": {
-                    "class": "Composer\\Installers\\Installer",
-                    "branch-alias": {
-                        "dev-installer-test": "1.0.0-dev"
-                    }
+                    "class": "Composer\\Installers\\Installer"
                 },
                 "autoload": {
                     "psr-0": {
@@ -67,7 +64,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://github.com/christianjul/installers.git",
-                    "reference": "84db9e22724c108bcf705e3448885ef68b3c36c6"
+                    "reference": "e054f57bb01d598428c3851491833bfff4582f95"
                 },
                 "replace": {
                     "shama/baton": "*"
@@ -75,13 +72,10 @@
                 "require-dev": {
                     "composer/composer": "1.0.*"
                 },
-                "time": "2012-09-25 08:54:51",
+                "time": "2012-09-25 05:32:08",
                 "type": "composer-installer",
                 "extra": {
-                    "class": "Composer\\Installers\\Installer",
-                    "branch-alias": {
-                        "dev-installer-test": "1.0.0-dev"
-                    }
+                    "class": "Composer\\Installers\\Installer"
                 },
                 "autoload": {
                     "psr-0": {
@@ -116,8 +110,7 @@
                     "wordpress",
                     "drupal",
                     "zend",
-                    "silverstripe",
-                    "FLOW3"
+                    "silverstripe"
                 ]
             }
         },
