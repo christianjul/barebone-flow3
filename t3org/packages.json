@@ -1,14 +1,14 @@
 {
     "packages": {
-        "composer/installers": {
+        "flow3/composer-installers": {
             "dev-master": {
-                "name": "composer/installers",
+                "name": "flow3/composer-installers",
                 "version": "dev-master",
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
                     "url": "git://github.com/christianjul/installers.git",
-                    "reference": "e054f57bb01d598428c3851491833bfff4582f95"
+                    "reference": "f49f777bd1e6be2445dd60c070a731736734e1d2"
                 },
                 "replace": {
                     "shama/baton": "*"
@@ -16,7 +16,7 @@
                 "require-dev": {
                     "composer/composer": "1.0.*"
                 },
-                "time": "2012-09-25 05:32:08",
+                "time": "2012-09-25 14:48:23",
                 "type": "composer-installer",
                 "extra": {
                     "class": "Composer\\Installers\\Installer"
@@ -54,11 +54,12 @@
                     "wordpress",
                     "drupal",
                     "zend",
-                    "silverstripe"
+                    "silverstripe",
+                    "FLOW3"
                 ]
             },
             "dev-installer-test": {
-                "name": "composer/installers",
+                "name": "flow3/composer-installers",
                 "version": "dev-installer-test",
                 "version_normalized": "dev-installer-test",
                 "source": {
@@ -122,7 +123,7 @@
                 "source": {
                     "type": "git",
                     "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                    "reference": "947608e4b8d6c9aef48e0418a1ce1bf313c605a7"
+                    "reference": "125ff01663cbea7bba36a42e3bcfb76f5d598783"
                 },
                 "require": {
                     "php": ">=5.3.2",
@@ -130,7 +131,7 @@
                     "ext-spl": "*",
                     "ext-json": ">=1.2.0",
                     "ext-session": "*",
-                    "composer/installers": "1.0.*",
+                    "flow3/composer-installers": "*",
                     "typo3/fluid": "*",
                     "typo3/party": "*",
                     "doctrine/orm": "2.2.2",
@@ -138,7 +139,7 @@
                     "symfony/yaml": ">2.1.0",
                     "symfony/dom-crawler": ">2.0.16"
                 },
-                "time": "2012-09-25 10:32:30",
+                "time": "2012-09-25 14:52:11",
                 "type": "flow3-framework",
                 "autoload": {
                     "psr-0": {
@@ -169,13 +170,13 @@
                 "source": {
                     "type": "git",
                     "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Fluid.git",
-                    "reference": "8061eeb300cb891dee2353f43c8731097e7e1447"
+                    "reference": "56822145986c86b490a178b48f9e72ff02280570"
                 },
                 "require": {
                     "typo3/flow3": "*",
-                    "composer/installers": "1.0.*"
+                    "flow3/composer-installers": "*"
                 },
-                "time": "2012-09-25 10:54:11",
+                "time": "2012-09-25 14:50:37",
                 "type": "flow3-framework",
                 "autoload": {
                     "psr-0": {
@@ -188,6 +189,33 @@
                 "description": "Next-Generation Templating Framework for FLOW3 and TYPO3 5.0, also backported to TYPO3 4.x"
             }
         },
+        "typo3/kickstart": {
+            "dev-master": {
+                "name": "typo3/kickstart",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Kickstart.git",
+                    "reference": "c86dcb772cd884eb2283aa44e431d016c45a1742"
+                },
+                "require": {
+                    "flow3/composer-installers": "*",
+                    "typo3/flow3": "*"
+                },
+                "time": "2012-09-25 14:55:37",
+                "type": "flow3-framework",
+                "autoload": {
+                    "psr-0": {
+                        "TYPO3\\Kickstart": "Classes"
+                    }
+                },
+                "license": [
+                    "LGPL-3.0+"
+                ],
+                "description": "A simple generator for controller and views."
+            }
+        },
         "typo3/party": {
             "dev-master": {
                 "name": "typo3/party",
@@ -195,13 +223,14 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git://github.com/christianjul/TYPO3.Party-composer.git",
-                    "reference": "f2ea55c580853dc6a65fcbd138b5ed0dae715636"
+                    "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Party.git",
+                    "reference": "9ef4f5f730ddcb0310766fdc051bd14f8c11fee7"
                 },
                 "require": {
+                    "flow3/composer-installers": "*",
                     "typo3/flow3": "*"
                 },
-                "time": "2012-09-18 13:51:15",
+                "time": "2012-09-25 15:07:15",
                 "type": "flow3-framework",
                 "autoload": {
                     "psr-0": {
@@ -209,19 +238,9 @@
                     }
                 },
                 "license": [
-                    "GPL-3.0+"
+                    "LGPL-3.0+"
                 ],
-                "authors": [
-                    {
-                        "name": "FLOW3 Development Team",
-                        "homepage": "http://typo3.org/teams/core-development-team/"
-                    }
-                ],
-                "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard.",
-                "homepage": "http://flow3.typo3.org",
-                "keywords": [
-                    "framework"
-                ]
+                "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard."
             }
         }
     }
